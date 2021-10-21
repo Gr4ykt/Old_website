@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/adapt.css">
+    <link rel="stylesheet" href="../../css/foundation.min.css">
+    <title>Gr4ykt web</title>
+</head>
+<body class="body-1">
+
+    <div class="contenedor">
+
+        <a href="../../index.html" class="index-return">
+            <header class="header-1"><h1>graykt@Internet:~$ ./Gr4y_kt</h1></header>
+        </a>
+
+        <aside class="aside-1">
+            <img src="https://avatars.githubusercontent.com/u/78503985?v=4" class="profile-img">
+            <p>Apasionado por la informática y la ciberseguridad, Programación web y scripts, también hacer writeups, Ctf player, Hack The Box y Tryhackme</p>
+            <div>
+                <img src="../../img/htb2.png">
+                <p><a href="https://www.hackthebox.eu/profile/351582" class="a-1">Perfil de Hack the box</a></p></div>
+            <div>
+                <img src="../../img/github.png">
+                <p><a href="https://github.com/Gr4ykt" class="a-1">Mi Github</a></p></div>
+            <div>
+                <img src="../../img/logo_ig.png">
+                <p><a href="https://www.instagram.com/soy_el_mati_kt/" class="a-1">Mi Instagram</a></p></div>
+
+            <div>
+                <img src="../../img/twitter.png">
+                <p><a href="https://twitter.com/thorfinn_san" class="a-1">Mi Twitter</a></p></div>
+                <br>
+        </aside>
+
+        <!--Aqui va la info-->
+        <section class="main">
+            <div class="mov-text">
+                <h3 class="h3-1">Creando Máquina Virtual</h3>
+                <p>Pues bien, en esta sección te ayudaré a crear tú máquina virtual, recuerda que si no sabes estos principios comiences con la <a href="CreandoEntornosPrincipal.html" class="a-1">página principal</a>, o <a href="Instalacion VirtualBox.html" class="a-1">instalando VirtualBox.</a></p>
+                <br>
+
+                <h4 class="a-1">Configurando la caja</h4>
+                <p>Dando como primer paso la configuración de la caja, debemos de entrar en el programa de VirtualBox previamente instalado, Nos aparece una opción de nueva, esta opción es la que nos permite crear nuevas cajas.</p>
+                <p>Al darle clic nos saldrá una pestaña en la cual podremos ir haciendo las principales configuraciones, como tal es colocarle el nombre, organizar que sistema operativo será instalado, en mi caso Debian de 64 bit, esta al ser una distribución de Linux, se elige este tipo, también le agregamos algún nombre descriptivo, en mi caso "Debian64".</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen14.jpg" alt="CreacionDeCajas">
+                <br>
+                <p>Luego nos pedirá la cantidad de memoria que se quiere asignar y el tipo de disco virtual, en mi caso siempre he preferido el VDI porque este es fácil de exportar(No explicaré a mayor detalle sobre los discos virtuales, pero te invito a que lo investigues, es interesante tenerlo en cuenta si quieres desarrollar tus propias máquinas y exportarlas).</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen12.jpg" alt="CreacionDeCajas" width="474">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen13.jpg" alt="CreacionDeCajas">
+                <br>
+                <p>Luego nos pedirá como queremos reservarlo, yo siempre he preferido dinámico para poder elegir cuanta memoria del disco duro(Tiene que ser menor a tu HDD o SSD físico, ya que este VDI se almacena en tu disco duro, al fin y al cabo es un espacio de memoria de la memoria física que puedes utilizar dentro, como dije, una computadora dentro de una computadora xD).</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen15.jpg" alt="CreacionDeCajas">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen16.jpg" alt="CreacionDeCajas">
+                <br>
+                <p>Pues bien, una vez finalizado se dirigen a la caja que se acaba de crear, dan clic derecho y a configuración.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen17.jpg" alt="CreacionDeCajas">
+                <p>Nos vamos a almacenamiento y seleccionamos la opción de controlador IDE y damos clic en la zona donde dice más con una imagen de un CD.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen18.jpg" alt="CreacionDeCajas">
+                <br>
+                <p>Al hacer esto nos aparecerá una ventana en la cual podremos añadir alguna ISO, aquí es donde utilizaras la ISO de Debian, la seleccionas y te diriges al la lista y buscas la ISO de Debian que seleccionaste y la agregas al controlador, y listo, al ejecutar la máquina, comenzara la instalación.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen19.jpg" alt="CreacionDeCajas">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen20.jpg" alt="CreacionDeCajas">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen21.jpg" alt="CreacionDeCajas">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen22.jpg" alt="CreacionDeCajas">
+                <br>
+                <br>
+                <p><a class="a-1">OPCIONAL</a>, nos dirigimos a red y cambias el estado de red NAT a adaptador puente, esto lo que hará es conectarnos a la red hogar, ya que funcionara con el controlador de red, eso si, al hacer esto, la máquina virtual detecta una conexión Ethernet, no puedes conectarte vía inalámbrica, ósea, no te detecta las redes dentro de la máquina virtual, pero esto no significa que no tengas conexión, sino que es más una emulación de la conexión que hay en el sistema principal, ósea que si el sistema operativo base no tiene conexión, las cajas virtuales tampoco, espero se entienda el concepto. Si no en caso de cualquier cosa puedes contactarme o buscar a través de internet.
+                    Pues bien, paro en esta parte para felicitarte si has hecho todo con éxito, en la siguiente sección te ayudaré a instalar Debian o el sistema operativo Linux de tu elección, vamos.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen23.jpg" alt="CreacionDeCajas">
+
+            </div>
+        </section>
+        <!--fin de la info -->
+
+        <footer>
+            <p> Powered by: Gr4y_kt</p>
+            <p> Credit By: <a href="https://get.foundation/" class="a-1">Foundation Zurb</a></p> 
+        </footer>
+    
+    <!-- Scripts js -->
+    <script src="../../js/vendor/jquery.js"></script>
+    <script src="../../js/vendor/what-input.js"></script>
+    <script src="../../js/vendor/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+    <!-- Fin Scripts js -->
+
+</div>
+</body>
+</html>
