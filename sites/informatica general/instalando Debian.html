@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/adapt.css">
+    <link rel="stylesheet" href="../../css/foundation.min.css">
+    <title>Gr4ykt web</title>
+</head>
+<body class="body-1">
+
+    <div class="contenedor">
+
+        <a href="../../index.html" class="index-return">
+            <header class="header-1"><h1>graykt@Internet:~$ ./Gr4y_kt</h1></header>
+        </a>
+
+        <aside class="aside-1">
+            <img src="https://avatars.githubusercontent.com/u/78503985?v=4" class="profile-img">
+            <p>Apasionado por la informática y la ciberseguridad, Programación web y scripts, también hacer writeups, Ctf player, Hack The Box y Tryhackme</p>
+            <div>
+                <img src="../../img/htb2.png">
+                <p><a href="https://www.hackthebox.eu/profile/351582" class="a-1">Perfil de Hack the box</a></p></div>
+            <div>
+                <img src="../../img/github.png">
+                <p><a href="https://github.com/Gr4ykt" class="a-1">Mi Github</a></p></div>
+            <div>
+                <img src="../../img/logo_ig.png">
+                <p><a href="https://www.instagram.com/soy_el_mati_kt/" class="a-1">Mi Instagram</a></p></div>
+
+            <div>
+                <img src="../../img/twitter.png">
+                <p><a href="https://twitter.com/thorfinn_san" class="a-1">Mi Twitter</a></p></div>
+                <br>
+        </aside>
+
+        <!--Aqui va la info-->
+        <section class="main">
+            <div class="mov-text">
+                <h3 class="h3-1">Instalando Debian 10</h3>
+                <p>Súper si has llegado hasta aquí, significa que has llevado a mano todo lo anterior y ahora nada más ni nada menos, al final de esta sección básica, instalaras un sistema operativo en la caja virtual previamente configurada. Agregar también que si no has repasado aquellas secciones o no las has leído, te invito a verlas, pueden ayudarte en algo o serte de utilidad para pequeños conceptos.</p>
+                <br>
+
+                <h4 class="a-1">Arrancando la máquina</h4>
+                <p>Pues bien, arrancar la máquina no es nada más que doble clic en la caja de nuestra elección y esta comenzara a ejecutarse, al igual que un programa, al hacer esto, como recordaran anteriormente agregamos el ISO de Debian a la máquina virtual, al arrancar no dará diversas opciones, elegiremos la instalación gráfica(Primera opción), ya que es la más cómoda y sencilla de utilizar.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen26.jpg" alt="InstalandoDebian">
+                <br>
+                <br>
+
+                <h4 class="a-1">Selección de idiomas</h4>
+                <p>Al seleccionar la instalación gráfica, sé nos redirigirá a la pestaña de idiomas, en mi caso seleccionaré español, al terminar en esta pestaña se nos dirigirá a la de teclado, si utilizas el convencional, pues tu teclado es el latinoamericano, aunque en mi caso seleccione el estadounidense o americano, ya que mi teclado es ese.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen27.jpg" alt="InstalandoDebian">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen29.jpg" alt="InstalandoDebian">
+                <br>
+                <br>
+
+                <h4 class="a-1">Configuración de usuario</h4>
+                <p>Bien nos aparecerá una barra de carga luego de finalizar la selección de idiomas.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen30.jpg" alt="InstalandoDebian">
+                <p>Ahora lo siguiente nos pedirá algún dominio, ustedes omitan esta parte y utilicen solo la IP, aunque si quieres tener dominio propio adelante.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen31.jpg" alt="InstalandoDebian">
+                <p>Ahora nos pedirá agregar el nombre que tendrá la máquina, en mi caso le coloque "MiMaquina" pero ustedes pueden elegir el que gusten.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen32.jpg" alt="InstalandoDebian">
+                <p>Luego nos pedirá las credenciales de Superusuario o Root(Administrador), en mi caso miclave123 es la contraseña.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen33.jpg" alt="InstalandoDebian">
+                <p>Luego se nos pedirá un nombre de usuario nuevo, en mi caso es Usuario, pero ustedes coloquen el que quieran. Luego se nos pedirá las credenciales de seguridad como contraseña, les recomiendo que si la utilicen por temas de seguridad si es que llegan a tener servicio SSH abierto o servicio de FTP.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen34.jpg" alt="InstalandoDebian">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen36.jpg" alt="InstalandoDebian">
+                <br>
+                <br>
+
+                <h4 class="a-1">Particionando el Disco Virtual</h4>
+                <p>Siguiendo con las instalación, pues se nos pedirá la configuración, en mi caso seleccione utilizar todo el disco, si eliges el LVM(Logical Volume Manager) este lo que nos hará es ejemplo tenemos 2 discos, juntarlos en uno solo dentro del sistema operativo, por eso, si no tienes más de un disco, es inútil.</p>
+                <p>Utilizar el modo manual es complicado, ya que las particiones las haces tu mismo y el cómo se ordenaran, no es muy recomendado para novatos, ya que entran varios conceptos, si esto tiene una buena cantidad de visitas, me pensaré el traerles la configuración manual de particiones, ya que es interesante saberlas si trabajas administrando alguna red. Luego de todo seleccionamos nuestro disco virtual en este caso.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen37.jpg" alt="InstalandoDebian">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen38.jpg" alt="InstalandoDebian">
+                <p>Luego nos aparecerá si queremos separar las particiones, esto tiene una ventaja y es que al estar particionado, estos se pueden cifrar del sistema principal, ejemplo en el caso home, donde se almacenan los usuarios, nadie que no tenga la contraseña de cifrado podrá acceder a estos y seleccionas el LVM cifrado, pero ya para no complicar tanto la cosa seleccionaré todos los ficheros en una partición, la cual es la recomendada para los novatos, para no tener tanto rollo. Luego aceptamos los cambios en el disco y seguimos con la instalación.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen39.jpg" alt="InstalandoDebian">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen40.jpg" alt="InstalandoDebian">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen41.jpg" alt="InstalandoDebian">
+                <br>
+                <br>
+
+                <h4 class="a-1">Finalizando la instalación</h4>
+                <p>Bien, ahora seleccionaremos un servidor de gestor de paquetes, Como se dijo en los conceptos, Debian utiliza aptitude(APT).</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen43.jpg" alt="InstalandoDebian">
+                <p>Se nos pedirá configurar un proxy, pero tranquilo, si no tienes, puedes perfectamente dejarlo en blanco y comenzara a configurarse el APT.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen44.jpg" alt="InstalandoDebian">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen45.jpg" alt="InstalandoDebian">
+                <p>Se nos pedirá agregar un entorno de escritorio(Si es que queremos, puedes utilizar solo la terminal si es de tu gusto), en mi caso lo instalaré con el entorno gráfico de GNOME, aunque hay varias GUI para Linux, yo en lo personal prefiero esta y te la recomiendo al ser la más similar a Windows que hay, pero si tu computadora es de pocos requisitos, te recomiendo XFCE aunque es un poco más compleja en ciertos aspectos que GNOME, y si quieres probar las otras te invito a hacerlo y las averigües tu mismo.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen47.jpg" alt="InstalandoDebian">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen48.jpg" alt="InstalandoDebian">
+                <p>Ahora se nos pedirá instalar el gestor de arranque GRUB, este es necesario para escoger el sistema operativo a ejecutar, así que seleccionalo y seleccionas el almacenamiento deseado, prácticamente todo a sí.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen49.jpg" alt="InstalandoDebian">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen50.jpg" alt="InstalandoDebian">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen51.jpg" alt="InstalandoDebian">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen52.jpg" alt="InstalandoDebian">
+                <p>Una vez aquí finaliza la instalación, no te asustes por la carga del kernel, es completamente normal.</p>
+                <br>
+                <br>
+
+                <h4 class="a-1">Iniciando el sistema Debian10</h4>
+                <p>Bien ahora se nos ejecutara el GRUB, seleccionas el Debian y comenzara a cargar, te pedirá tus credenciales de usuario, pero oye, se ve pésimo, tranquilo, que ya lo solucionaremos, primero pon en pantalla completa en la opción VER>ver pantalla completa de la barra de opciones del programa.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen55.jpg" alt="InstalandoDebian">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen56.jpg" alt="InstalandoDebian">
+                <img src="../../img/CreacionDeEntornosLinux1/imagen57.jpg" alt="InstalandoDebian">
+                <p>Ya para finalizar cambiamos la resolución dando clic derecho configuración de pantalla y adecuarla a tu gusto, con eso ya tendrás lo básico de tu sistema operativo Linux totalmente funcionando, si este método de cambiar la resolución no te funciona, tranquilo, ya sacaré otra solución, ya que no es el único modo que hay.</p>
+                <img src="../../img/CreacionDeEntornosLinux1/imagen58.jpg" alt="InstalandoDebian">
+                <br>
+
+            </div>
+        </section>
+        <!--fin de la info -->
+
+        <footer>
+            <p> Powered by: Gr4y_kt</p>
+            <p> Credit By: <a href="https://get.foundation/" class="a-1">Foundation Zurb</a></p> 
+        </footer>
+    
+    <!-- Scripts js -->
+    <script src="../../js/vendor/jquery.js"></script>
+    <script src="../../js/vendor/what-input.js"></script>
+    <script src="../../js/vendor/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+    <!-- Fin Scripts js -->
+
+</div>
+</body>
+</html>
